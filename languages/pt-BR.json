@@ -1,0 +1,226 @@
+{
+	"kasper": {
+		"title": "👻 KASPER",
+		"subtitle": "Karma Assessment and Player Evaluation Resource",
+		"settings": {
+			"canPlayersView": {
+				"name": "Jogadores Veêm?",
+				"hint": "Se habilitado, facções ficarão visíveis para jogadores. Habilite esta opção para exibir todas as facções por padrão. Deixe desabilitado para esconder todas as fações, por padrão."
+			},
+			"minify.name": "Minimizado?",
+			"minify.hint": "Isso fará a UI ficar menor e mais compacta. Fique avisado de que isso pode sobrepor o rótulo de reputação sobre a barra colorida e pode ficar difícil de ler em algumas cores.",
+			"trigger": {
+				"name": "Método de Ativação?",
+				"hint": "Como você quer ativar o KASPER UI? 'Diálogo' irá adicionar um botão na aba Diário. 'Fixo' irá fixar uma janela acima das notas, na aba de Diário.",
+				"choices": {
+					"dialog": "Diálogo",
+					"pinned": "Fixo"
+				}
+			},
+			"disableWheel": {
+				"name": "Desabilitar Rolagem?",
+				"hint": "Se habilitado, não será possível ajustar os valores de reputação  usando a rolagem do mouse, a não ser que o usuário segure a tecla CTRL.",
+				"hintDisabled": "DESABILITADO: Esta configuração é desabilitada quando '{moduleTitle}' está habilitado. Por favor, use aquele módulo para configurar como você gostaria que os inputs deste módulo funcionasse."
+			},
+			"config": {
+				"name": "Configurar Padrões Globais",
+				"hint": "Estes são os valores padrão usados para todos os rastreadores de reputação. Você pode clicar com o botão direito do mouse e configurar valores de rastreadores individualmente na janela de Gerenciamento.",
+				"label": "Configurar Padrões Globais"
+			}
+		},
+		"manager": {
+			"title": "Gerenciamento",
+			"sortable": "Arraste para Classificar",
+			"addFaction": "Adicionar Facção",
+			"decreaseReputation": "Diminuir Reputação",
+			"increaseReputation": "Aumentar Reputação",
+			"dragDrop": {
+				"addReputation": "Adicionar Reputação",
+				"dropHere": "Solte Aqui"
+			},
+			"contextMenu": {
+				"altTitle": "Título Alternativo",
+				"togglePlayerView": {
+					"show": "Mostrar para Jogadores",
+					"showAll": "Mostrar Todas as Fações",
+					"hide": "Esconder dos Jogadores",
+					"hideAll": "Esconder Todas as Facções"
+				}
+			},
+			"dialog": {
+				"setAltTitle": {
+					"label": "Título Alternativo",
+					"hint": "Se não estiver em branco, este valor será mostrado aos jogadores ao invés do título padrão. Isso é útil caso queira esconder dos jogadores o nome da facção."
+				}
+			}
+		},
+		"configure": {
+			"title": "Configurar",
+			"titles": {
+				"global": "Configurações Globais",
+				"reputation": "Configurações da Reputação {title}",
+				"faction": "Configurações da Facção {title}"
+			},
+			"settings": {
+				"title": "Definir Intervalos",
+				"override": {
+					"name": "Configurações Únicas",
+					"hint": "Isto substituirá as configurações pai deste elemento e de seus filhos."
+				},
+				"presets": {
+					"name": "Carregar Predefinição",
+					"hint": "Isso carregará uma predefinição de valores para uso com o rastreador de reputação selecionado.",
+					"custom.name": "Personalizado",
+					"inherit.name": "Herdar"
+				},
+				"minimum": {
+					"name": "Menor Valor de Reputação",
+					"hint": "Este é o valor mais baixo que uma reputação pode ter. Este é geralmente o valor mais negativo."
+				},
+				"maximum": {
+					"name": "Maior Valor de Reputação",
+					"hint": "Este é o valor mais alto que uma reputação pode ter. Este é geralmente o valor mais positivo."
+				},
+				"default": {
+					"name": "Valor de Reputação Padrão",
+					"hint": "Este é o valor padrão que uma reputação será definida quando uma nova facção for adicionada."
+				},
+				"colorize": {
+					"name": "Colorir Barra de Reputação?",
+					"hint": "Isso irá colorir a barra de reputação com base no valor da reputação."
+				}
+			},
+			"tiers": {
+				"title": "Definir Níveis",
+				"headingLabel": "Rótulo de Nível",
+				"addTierLabel": "Definir Rótulo de Nível"
+			},
+			"dialog": {
+				"overwriteGlobalDefaults": {
+					"title": "Substituir Padrões Globais",
+					"content": "Cuidado! Isso irá substituir os Padrões Globais por estas configurações. Tem certeza que quer continuar?"
+				},
+				"updatePreset": {
+					"title": "Atualizar Definições de {title}",
+					"content": "Cuidado! Isso irá substituir as definições de {title}, o que significa que todos os rastreadores que usam esta predefinição serão atualizados. Tem certeza que quer continuar?"
+				},
+				"custom": {
+					"title": "Criar Nova Predefinição",
+					"label": "Nome da Predefinição",
+					"hint": "Entre com o título da predefinição. Este título será usado para criar um seletor fácil de encontrar ao usar o KASPER."
+				}
+			},
+			"tooltips": {
+				"overrideGlobalDefaults": "Segure SHIFT para substituir os Padrões Globais"
+			},
+			"notifications.error": {
+				"overwriteGlobalDefaultsRejected": "<strong>{title}</strong>: O usuário escolheu não substituir os Padrões Globais. A predefinição não foi atualizada!",
+				"noPresetTitle": "<strong>{title}</strong>: O título da predefinição é obrigatório ao criar uma nova predefinição. A predefinição não foi criada!",
+				"presetTitleExists": "<strong>{title}</strong>: <em>{preset}</em> já existe como uma predefinição. A predefinição não foi criada!",
+				"presetTitleProtected": "<strong>{title}</strong>: <em>{preset}</em> é uma palavra-chave protegida e não pode ser usada. A predefinição não foi atualizada!"
+			},
+			"notifications.warn.overwriteRejected": "<strong>{title}</strong>: <em>{preset}</em> A predefinição não foi atualizada!"
+		},
+		"reputation": {
+			"title": "Título de Reputação",
+			"faction": {
+				"title": "Título de Facção"
+			}
+		},
+
+		"TIERS": {
+			"globalDefaults": {
+				"title": "Padrões Globais"
+			},
+			"house-divided": {
+				"title": "A House Divided",
+				"labels": {
+					"Despised": "Despised",
+  					"Scorned": "Scorned",
+					"Unfriendly": "Unfriendly",
+					"Neutral": "Neutral",
+					"Friendly": "Friendly",
+					"Loyal": "Loyal",
+					"Devoted": "Devoted"
+				}
+			}, 
+			"fallout": {
+				"title": "Fallout",
+				"labels": {
+					"VeryGood": "Muito Bom",
+					"Good": "Bom",
+					"Neutral": "Neutro",
+					"Bad": "Mau",
+					"VeryBad": "Muito Mau"
+				}
+			},
+			"solider-ranks": {
+				"title": "Soldier Ranks",
+				"labels": {
+					"Unlisted": "Unlisted",
+					"Private": "Private",
+					"Corporal": "Corporal",
+					"Sergeant": "Sergeant",
+					"MasterSergeant": "Master Sergeant",
+					"SecondLieutenant": "Second Lieutenant",
+					"FirstLieutenant": "First Lieutenant",
+					"Captain": "Captain",
+					"Major": "Major",
+					"Colonel": "Colonel",
+					"BrigadierGeneral": "Brigadier General",
+					"MajorGeneral": "Major General",
+					"LieutenantGeneral": "Lieutenant General",
+					"General": "General",
+					"Commander": "Commander"
+				}
+			},
+			"generic": {
+				"title": "Genérico",
+				"labels": {
+					"Infamous": "Infame",
+					"Exalted": "Exaltado",
+					"Feared": "Temido",
+					"Loathed": "Detestado",
+					"Despised": "Desprezado",
+					"Hated": "Odiado",
+					"Scorned": "Menosprezado",
+					"Neutral": "Neutro",
+					"Friendly": "Amigável",
+					"Allied": "Aliado",
+					"Respcted": "Respeitado",
+					"Revered": "Reverenciado"
+				}
+			},
+			"simple": {
+				"title": "Simples",
+				"labels": {
+					"Enemy": "Inimigo",
+					"Neutral": "Neutro",
+					"Friendly": "Amigável"
+				}
+			},
+			"pf2e-reputations": {
+				"title": "Pathfinder 2e Reputations",
+				"labels": {
+					"Hunted": "Hunted",
+					"Hated": "Hated",
+					"Disliked": "Disliked",
+					"Ignored": "Ignored",
+					"Liked": "Liked",
+					"Admired": "Admired",
+					"Revered": "Revered"
+				}
+			},
+			"pf2e-attitudes": {
+				"title": "Pathfinder 2e Attitudes",
+				"labels": {
+					"Hostile": "Hostile",
+					"Unfriendly": "Unfriendly",
+					"Indifferent": "Indifferent",
+					"Friendly": "Friendly",
+					"Helpful": "Helpful"
+				}
+			}
+		}
+	}
+}
